@@ -8,7 +8,7 @@ class Clikae < Formula
 
   def install
     libexec.install "bin", "lib"
-    libexec.install "assets" if File.directory?("assets")   # welcome-screen logo
+    libexec.install "assets" if File.directory?("assets") # welcome-screen logo
     (bin/"clikae").write <<~SH
       #!/usr/bin/env bash
       exec "#{libexec}/bin/clikae" "$@"
