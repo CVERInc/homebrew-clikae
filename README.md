@@ -1,6 +1,6 @@
 # homebrew-clikae
 
-A [Homebrew](https://brew.sh) tap for [**clikae**](https://github.com/CVERInc/clikae) — a pure-bash CLI profile switcher for juggling multiple accounts/configs across any CLI that reads its config from an environment variable.
+A [Homebrew](https://brew.sh) tap for [**clikae**](https://github.com/CVERInc/clikae) — a pure-bash on-ramp for AI coding CLIs: land back on your recent sessions across every engine, with your memory and git identity portable when you change engines. It also switches any CLI that reads its config from an environment variable.
 
 ## Install
 
