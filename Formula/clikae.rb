@@ -1,13 +1,13 @@
 class Clikae < Formula
   desc "CLI profile switcher — manage multiple accounts/configs for any CLI"
   homepage "https://github.com/CVERInc/clikae"
-  url "https://github.com/CVERInc/clikae/archive/refs/tags/v0.30.0.tar.gz"
-  sha256 "a0ba690fa9eec2ca037f039a459f52ff7cf636f4796a134f34a3966a3be11ea9"
+  url "https://github.com/CVERInc/clikae/archive/refs/tags/v0.31.0.tar.gz"
+  sha256 "578a461371280e0447532631a85926f4bc5b993423a3e9a78a95b8f961791f01"
   license "MIT"
   head "https://github.com/CVERInc/clikae.git", branch: "main"
 
   def install
-    libexec.install "bin", "lib"
+    libexec.install "bin", "lib", "templates"
     libexec.install "assets" if File.directory?("assets") # welcome-screen logo
     (bin/"clikae").write <<~SH
       #!/usr/bin/env bash
